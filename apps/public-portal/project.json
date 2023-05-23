@@ -19,7 +19,8 @@
           "apps/public-portal/src/favicon.ico",
           "apps/public-portal/src/assets"
         ],
-        "styles": ["apps/public-portal/src/styles.css"],
+        "styles": ["apps/public-portal/src/styles.css", "@angular/material/prebuilt-themes/purple-green.css"
+      ],
         "scripts": []
       },
       "configurations": {

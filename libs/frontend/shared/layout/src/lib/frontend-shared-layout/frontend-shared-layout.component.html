@@ -1,4 +1,12 @@
-<p>frontend-shared-layout works!</p>
+<mat-sidenav-container class="example-container">
+    <mat-sidenav #sidenav mode="side" [(opened)]="opened" 
+    class="sidenav">
+        <mat-toolbar color="primary">Siemens</mat-toolbar>
 
-
-hello
+    </mat-sidenav>
+  
+    <mat-sidenav-content>
+        <mat-toolbar color="primary"></mat-toolbar>
+        <ng-content></ng-content>
+    </mat-sidenav-content>
+  </mat-sidenav-container>

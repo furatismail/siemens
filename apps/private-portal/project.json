@@ -19,7 +19,8 @@
           "apps/private-portal/src/favicon.ico",
           "apps/private-portal/src/assets"
         ],
-        "styles": ["apps/private-portal/src/styles.css"],
+        "styles": ["apps/private-portal/src/styles.css", 
+        "@angular/material/prebuilt-themes/indigo-pink.css"],
         "scripts": []
       },
       "configurations": {

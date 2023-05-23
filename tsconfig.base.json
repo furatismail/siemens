@@ -15,6 +15,12 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@siemens/frontend/private-portal/films/data-access-films": [
+        "libs/frontend/private-portal/films/data-access-films/src/index.ts"
+      ],
+      "@siemens/frontend/private-portal/films/feature-films": [
+        "libs/frontend/private-portal/films/feature-films/src/index.ts"
+      ],
       "@siemens/frontend/shared/layout": [
         "libs/frontend/shared/layout/src/index.ts"
       ]
