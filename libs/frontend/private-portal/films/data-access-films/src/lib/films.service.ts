@@ -11,7 +11,7 @@ export class FilmsService {
     getAll(): Observable<Array<any>> {
         // private portal => www.privatni.api.sk
         // public-portal => www.public.api.sk
-        return this.httpClient.get<Array<any>>(`${this.apiUrl}/api/films`);
+        return this.httpClient.get<Array<any>>('/api/films');
     }
 
     getAll2(): Promise<Array<any>> {

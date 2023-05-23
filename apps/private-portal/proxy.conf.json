@@ -1,0 +1,7 @@
+{
+    "/api" : {
+        "target": "https://5ed74760152c310016d84d62.mockasssssssxspi.io",
+        "logLevel": "info",
+        "changeOrigin": true
+    }
+}
