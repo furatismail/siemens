@@ -8,6 +8,8 @@ import { FrontendSharedLayoutComponent } from '@siemens/frontend/shared/layout';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatButtonModule} from '@angular/material/button';
 import { HttpClientModule } from '@angular/common/http';
+import {API_URL} from '@siemens/frontend/shared/utility';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [AppComponent, NxWelcomeComponent],
@@ -19,7 +21,7 @@ import { HttpClientModule } from '@angular/common/http';
     FrontendSharedLayoutComponent,
     MatButtonModule
   ],
-  providers: [],
+  providers: [{provide: API_URL, useValue: environment.apiUrl}],
   bootstrap: [AppComponent],
 })
 export class AppModule { }

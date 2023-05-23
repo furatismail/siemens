@@ -23,6 +23,9 @@
       ],
       "@siemens/frontend/shared/layout": [
         "libs/frontend/shared/layout/src/index.ts"
+      ],
+      "@siemens/frontend/shared/utility": [
+        "libs/frontend/shared/utility/src/index.ts"
       ]
     }
   },

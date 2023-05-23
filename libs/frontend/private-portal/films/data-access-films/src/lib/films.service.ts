@@ -1,12 +1,20 @@
 import { Injectable, inject } from '@angular/core'
 import { HttpClient } from '@angular/common/http'
-import { Observable } from 'rxjs';
+import { Observable, lastValueFrom } from 'rxjs';
+import { API_URL } from '@siemens/frontend/shared/utility';
 
 @Injectable({ providedIn: "root" })
 export class FilmsService {
+    private apiUrl = inject(API_URL)
     private httpClient = inject(HttpClient)
 
     getAll(): Observable<Array<any>> {
-        return this.httpClient.get<Array<any>>('https://5ed74760152c310016d84d62.mockapi.io/api/films');
+        // private portal => www.privatni.api.sk
+        // public-portal => www.public.api.sk
+        return this.httpClient.get<Array<any>>(`${this.apiUrl}/api/films`);
+    }
+
+    getAll2(): Promise<Array<any>> {
+        return lastValueFrom(this.httpClient.get<Array<any>>('/api/films'));
     }
 }
