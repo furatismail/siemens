@@ -4,6 +4,6 @@ export const appRoutes: Route[] = [
     {
         path: "films",
         loadChildren: () => import('@siemens/frontend/private-portal/films/feature-films')
-        .then(routes => routes.)
+        .then(routes => routes.FILMS_ROUTES)
     }
 ];

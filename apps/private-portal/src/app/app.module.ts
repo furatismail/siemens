@@ -7,12 +7,14 @@ import { NxWelcomeComponent } from './nx-welcome.component';
 import { FrontendSharedLayoutComponent } from '@siemens/frontend/shared/layout';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatButtonModule} from '@angular/material/button';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [AppComponent, NxWelcomeComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    HttpClientModule,
     RouterModule.forRoot(appRoutes, { initialNavigation: 'enabledBlocking' }),
     FrontendSharedLayoutComponent,
     MatButtonModule
